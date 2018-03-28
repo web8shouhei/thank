@@ -1,0 +1,62 @@
+{
+  "name": "thank",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app) [![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "browser-sync": "^2.23.6",
+    "browserify": "^16.1.1",
+    "browserify-shim": "^3.8.14",
+    "css-mqpacker": "^6.0.2",
+    "es6-promise": "^4.2.4",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-eslint": "^4.0.2",
+    "gulp-gzip": "^1.4.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-streamify": "^1.0.2",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "jquery": "^3.3.1",
+    "minimist": "^1.2.0",
+    "nib": "^1.1.2",
+    "riot": "^3.9.0",
+    "stylus": "^0.54.5",
+    "tether": "^1.4.3",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "browser": {
+    "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+    "jquery": "./node_modules/jquery/dist/jquery.min.js"
+  },
+  "browserify-shim": {
+    "jquery": "global:$",
+    "bootstrap": {
+      "exports": "$",
+      "depends": [
+        "jquery:jQuery",
+        "tether:Tether"
+      ]
+    }
+  }
+}

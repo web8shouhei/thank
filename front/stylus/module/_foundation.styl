@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css)
+
+*
+  font-size font-size--default
+  font-family 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif
+
+html
+  position relative
+  opacity 1
+
+.active
+  color thank-color--primary !important
+  transition all .2s ease
+
+.fixed
+  z-index 1000
+  position fixed !important
+  background #fff !important
+  opacity .9
+  top 0
+  left 0
+  transition all .2s ease
+
+.fadeIn
+  animation fadeIn .5s ease  
+
+.fadeOut
+  animation fadeOut .2s ease  
+
+.html-loading
+  animation htmlLoading 1s ease
+
+@keyframes htmlLoading
+  0%
+    top 20px
+    opacity 0
+  100%
+    top 0
+    opacity 1
+
+@keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 0.9
+
+@keyframes fadeOut
+  0%
+    opacity 0.9
+  100%
+    opacity 0
